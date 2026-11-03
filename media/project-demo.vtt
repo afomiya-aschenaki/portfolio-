@@ -1,0 +1,31 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.000
+The Adaptive Traffic Management System starts, and I select the vehicle input option.
+
+00:00:03.000 --> 00:00:06.000
+I enter the number of vehicles waiting in the North and South lanes.
+
+00:00:06.000 --> 00:00:09.000
+Next, I enter the vehicle counts for the East and West lanes.
+
+00:00:09.000 --> 00:00:13.000
+The system processes the traffic information and calculates the traffic score.
+
+00:00:13.000 --> 00:00:17.000
+The system selects the North lane for a green light and displays the decision breakdown.
+
+00:00:17.000 --> 00:00:21.000
+The dashboard shows the vehicle counts and waiting times for each direction.
+
+00:00:21.000 --> 00:00:24.000
+After five cycles, the system reports that all lanes are cleared and stops.
+
+00:00:24.000 --> 00:00:28.000
+The menu provides options for automatic mode, manual mode, analytics, and exit.
+
+00:00:28.000 --> 00:00:31.000
+The analytics section displays average vehicles per lane and identifies the busiest lane.
+
+00:00:31.000 --> 00:00:34.800
+The final results show traffic information and emergency event records.
