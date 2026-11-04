@@ -11,6 +11,9 @@
 </head>
 <body>
 <header>
+<canvas id="logo" width="120" height="120">
+    Afomiya Aschenaki logo
+</canvas>
 <h1>Afomiya Aschenaki</h1>
 <img src="images/profile.jpg"
      alt="Portrait of afomiya aschenaki smiling"
@@ -132,6 +135,10 @@ where the important content is &amp; helps screen readers.</p>
         60%
     </meter>
 </p>
+<h3>My Skill Chart</h3>
+<canvas id="skillChart" width="300" height="150">
+    My programming skill bar chart
+</canvas>
 <h3>My Learning Roadmap</h3>
 <ol type="1">
     <li>HTML structure and content</li>
@@ -392,5 +399,51 @@ int main() {
 </p>  
 <p>&copy; 2026 Afomiya Aschenaki. All rights reserved.</p>
 </footer>
+<script>
+const canvas = document.getElementById('logo');
+const ctx = canvas.getContext('2d');
+ctx.fillStyle = "lightblue";
+ctx.fillRect(0, 0, 120, 120);
+ctx.beginPath();
+ctx.arc(60, 60, 45, 0, 2 * Math.PI);
+ctx.fillStyle = "pink";
+ctx.fill();
+ctx.fillStyle = "white";
+ctx.font = "italic 36px Arial";
+ctx.textAlign = "center";
+ctx.textBaseline = "middle";
+ctx.fillText("AA", 60, 62);
+
+const chart = document.getElementById('skillChart');
+const chartCtx = chart.getContext('2d');
+
+const skills = [
+    { name: "HTML", value: 0.8 },
+    { name: "Python", value: 0.7 },
+    { name: "JavaScript", value: 0.2 },
+    { name: "C++", value: 0.6 }
+];
+
+chartCtx.fillStyle = "lightgreen";
+const positions = [25, 95, 165, 235];
+for (let i = 0; i < skills.length; i++) {
+    let height = skills[i].value * 80;
+    chartCtx.fillRect(
+        positions[i],
+        115 - height,
+        30,
+        height
+    );
+    chartCtx.fillStyle = "black";
+    chartCtx.font = "15px Arial";
+    chartCtx.textAlign = "center";
+    chartCtx.fillText(
+        skills[i].name,
+        positions[i] + 15,
+        135
+    );
+    chartCtx.fillStyle = "lightgreen";
+}
+</script>
 </body>
 </html>
