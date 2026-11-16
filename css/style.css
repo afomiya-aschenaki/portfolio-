@@ -5,3 +5,26 @@ font-family: Arial, sans-serif;
 /*h1 {
 color: orange;
 }*/
+/* Palette
+Primary #1f5fa8 (blue, same as the logo)
+Dark #22313f (text)
+Accent hsl(37, 91%, 55%) (orange)
+Light #f4f6f9 (page background)
+*/
+body {
+background-color: #84dfc7;
+color: #22313f; /* hex */
+}
+h1 {
+color: #5d24a2; /* hex */
+}
+h2 {
+color: rgb(136, 31, 168); /* the same blue in RGB */
+}
+h3 {
+
+color: hsl(262, 56%, 48%); /* the same blue in HSL */
+}
+mark {
+background-color: rgba(166, 111, 23, 0.35); /* see-through orange */
+}
